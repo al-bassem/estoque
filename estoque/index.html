@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de estoque</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Controle de estoque</h1>
+    <p>Confira se há unidades suficientes para atender à compra.</p>
+
+    <form id="stock-form" novalidate>
+      <label for="available">Estoque disponível</label>
+      <input id="available" type="number" min="0" step="1" placeholder="Ex.: 25">
+
+      <label for="desired">Quantidade desejada</label>
+      <input id="desired" type="number" min="1" step="1" placeholder="Ex.: 10">
+
+      <button type="submit">Verificar disponibilidade</button>
+    </form>
+
+    <section id="result" aria-live="polite" hidden>
+      <h2 id="result-title"></h2>
+      <p id="result-message"></p>
+    </section>
+  </main>
+</body>
+</html>
